@@ -81,6 +81,7 @@ li a:hover {
 
 #sect1, #sect2, #sect3 {
     scroll-margin-top: 160px;
+    font-size: 32px;
 }
 
 #navbar img {
@@ -89,4 +90,26 @@ li a:hover {
 
 .section1 p, .section2 p{
     font-size: 28px;
+}
+
+.section1 img, .section2 img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar ul {
+        display: none;
+    }
+    #navbar img {
+        max-width: 75%;
+    }
+    #sect1, #sect2, #sect3 {
+        font-size: 24px;
+    }
+    .section1 p, .section2 p, .box {
+        font-size: 20px;
+    }
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
